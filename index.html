@@ -21,10 +21,11 @@
                         <div class="card-body p-5">
 
                             <div class="mb-md-5 mt-md-4 pb-5">
-                                <h2 class="fw-bold mb-2 text-uppercase text-center">PasswordHUB</h2>
+                                <h2 class="fw-bold mb-2  text-center">PaSSwoRdHuB<i class="p-2 fa fa-key"
+                                        aria-hidden="true"></i></h2>
                                 <div class="row mb-2">
                                     <div class="col-12">
-                                        <h6 class="text-center" id="notification"></h6>
+                                        <h6 class="d-none" id="notification"></h6>
                                     </div>
                                 </div>
                                 <div class="row mb-2">
@@ -34,7 +35,8 @@
                                 </div>
                                 <div class="row mb-2">
                                     <div class="col-8">
-                                        <label for="passwordLength" class="col-form-label">Password Length</label>
+                                        <label for="passwordLength" class="col-form-label">Password Length<span
+                                                class="important">*</span></label>
                                     </div>
                                     <div class="col-4">
                                         <input type="number" id="passwordLength" class="form-control">
@@ -50,7 +52,8 @@
                                 </div>
 
                                 <div class="row">
-                                    <button class="btn btn-outline-light btn-lg px-5" type="button">Generate
+                                    <button class="btn btn-outline-light btn-lg px-5" type="button"
+                                        onclick="generatePassword()">Generate
                                         Password</button>
                                 </div>
                             </div>
