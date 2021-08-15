@@ -29,3 +29,4 @@ phase 2 (GENERATE UPPERCASE INCLUDING OTHER OPTIONS RANDOM PASSWORD)
   + run a loop till the user given password length 
     + if uppercase checkbox checked push UPPERCASE array to the superset (repeat this for each checkbox)
     + pick random character from the superset and concate with final result  
+
