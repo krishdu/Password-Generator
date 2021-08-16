@@ -52,4 +52,22 @@ const SYMBOLS = ["!","@","#","$","%","^","&","*",")","(","[","]","{","}","_","?"
         message.setAttribute("class", "d-none");
     }, 2000);
  }
+
+ /* modern asynchronous Clipboard API */
+ function copyPasswordToClipboard(){
+    const newClip = document.querySelector("#generatedPassword").value;
+    navigator.permissions.query({name: "clipboard-write"}).then(result => {
+        if (result.state == "granted" || result.state == "prompt") {
+            updateClipboard(newClip);
+        }
+    });
+ }
+
+ function updateClipboard(newClip) {
+  navigator.clipboard.writeText(newClip).then(function() {
+       console.log("clipboard successfully set");
+     }, function() {
+        console.log("clipboard write failed");
+  });
+ }
     

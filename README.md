@@ -38,3 +38,8 @@ phase 3 (IMPLEMENT setTimeout FOR ALERT MESSAGES)
 + whenever a sucessMessage function call, it will call setTimeout WebApi and set a callback function.
 + And the callback function will fade up the alert
 
+```
+phase 4 (IMPLEMENT A COPY BUTTON)
+```
++ request if browser has the access to clipboard
++ if browser has the permission write the clipboard with new value 
