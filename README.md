@@ -3,6 +3,8 @@
 | [Live Application (👆)](https://krishdu.github.io/Password-Generator) |
 | ------|
 
+## ✨ My Thought Process ✨
+
 + UI
     + readonly input box to show the generated input
     + 1 input box (password length)
@@ -29,4 +31,10 @@ phase 2 (GENERATE UPPERCASE INCLUDING OTHER OPTIONS RANDOM PASSWORD)
   + run a loop till the user given password length 
     + if uppercase checkbox checked push UPPERCASE array to the superset (repeat this for each checkbox)
     + pick random character from the superset and concate with final result  
+
+```
+phase 3 (IMPLEMENT setTimeout FOR ALERT MESSAGES)
+```
++ whenever a sucessMessage function call, it will call setTimeout WebApi and set a callback function.
++ And the callback function will fade up the alert
 

@@ -11,7 +11,7 @@ const SYMBOLS = ["!","@","#","$","%","^","&","*",")","(","[","]","{","}","_","?"
         const isIncludeLowercase = document.querySelector("#isLowerCase").checked;
         const isIncludeNumber = document.querySelector("#isNumber").checked;
         const isIncludeSymbol = document.querySelector("#isSymbol").checked;
-        if(isIncludeUppercase || isIncludeLowercase){
+        if(isIncludeUppercase || isIncludeLowercase ||isIncludeNumber || isIncludeSymbol){
             createPassword(passwordLength, isIncludeUppercase, isIncludeLowercase, isIncludeNumber, isIncludeSymbol);
         }else{
             displayAlertMessage("Select atleast one constraint!");    
@@ -48,4 +48,8 @@ const SYMBOLS = ["!","@","#","$","%","^","&","*",")","(","[","]","{","}","_","?"
     const message = document.querySelector("#notification");
     message.setAttribute("class", "alert alert-danger text-center");
     message.innerHTML = msg;
+    setTimeout(function(){
+        message.setAttribute("class", "d-none");
+    }, 2000);
  }
+    
