@@ -1,7 +1,15 @@
 # Password Generator
 
+> While building this Password Generator application,
+> I learned how to work with checkbox using JavaScript
+> and how to use setTimeout to hide the alert after certain time.
+> Also I tried to implement asynchronous Clipboard API (This is an experimental technology, not supported by every browser)
+
 | [Live Application (👆)](https://krishdu.github.io/Password-Generator) |
 | ------|
+<p align="center">
+<img alt="GIF" src="https://github.com/krishdu/Password-Generator/blob/master/password-generator-image.gif?raw=true" width="800" height="400"/>
+</p>
 
 ## ✨ My Thought Process ✨
 
